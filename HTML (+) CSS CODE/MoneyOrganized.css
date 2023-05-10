@@ -1,0 +1,164 @@
+.patterns {
+  padding-top: 15px;
+ }
+ svg text {
+   font-family: Lora;
+   letter-spacing: 10px;
+   stroke: #0869A6;
+   font-size: 150px;
+   font-weight: 700;
+   stroke-width: 3;
+   animation: textAnimate 5s infinite alternate;  
+ }
+
+ @keyframes textAnimate {
+   0% {
+     stroke-dasharray: 0 50%;
+     stroke-dashoffset:  20%;
+     fill:#04BF8A
+   }
+  
+   100% {
+     stroke-dasharray: 50% 0;
+     stroke-dashoffstet: -20%;
+     fill: #04BF8A
+   }
+}
+
+
+*{
+  margin:0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+  background:#042159;
+  color:#77D9AB;
+}
+
+.title{
+  width: 500px;
+  color:#0869A6;
+  margin:3% auto;
+}
+
+.content{
+  width: 580px;
+  margin: 0 auto;
+  background-color:#0869A6;
+  padding: 3%;
+  padding-left: 6%;
+}
+
+.secondTitle{
+  text-align:left;
+  margin: 2% 0;
+  font-weight: 100;
+}
+
+.form{
+  padding: 5px;
+}
+
+.formLine{
+  display: inline-flex;
+  padding: 5px 0px;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float:right;
+  margin-right: 100px;
+}
+
+input, select{
+  width: 130px;
+  margin-left: 10px;
+}
+
+table{
+  width: 100%;
+}
+
+thead{
+  background-color:#042159;
+  line-height: 30px;
+}
+
+
+button{
+  width: 200px;
+  color:#fff; 
+  padding: 10px;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 20px;
+  background-color: #04BF8A;
+  border-radius: 5px;
+  margin: 14px 25%;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+imgmover{
+  padding-top: 25px;
+}
+
+G {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+PercentageBackground {
+  background-color: #042159;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+Percentage {
+  width: 480px;
+  background-color: #0869A6;
+  margin: 12px 0;
+  padding: 24px;
+  text-align: center;
+}
+input[type=number] {
+  width: 84px;
+  font-size: 18px;
+  padding: 8px;
+  margin: 0px 8px 8px 8px;
+  border: 2px solid #ccc;
+}
+clix {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 12px 0;
+  padding: 8px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+input[type=text] {
+  font-size: 22px;
+  padding: 8px 0;
+  font-weight: 900;
+  text-align: center;
+  background-color: #f7f7f7;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}

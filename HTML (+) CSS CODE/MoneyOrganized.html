@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Expense Tracker App</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="MoneyOrganized.css">
+</head>
+<body>
+    <header>
+        <div class="patterns">
+            <svg width="100%" height="35%">
+              <defs>
+                  <style>
+               @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+             </style>
+              </defs>        
+              <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"> </rect>    
+           <text x="50%" y="60%"  text-anchor="middle"  >
+            Expense Tracker
+           </text>
+           </svg>
+          </div>
+    <header>
+
+    <section class="content">
+        <h3 class="secondTitle">Add a new item: </h3>
+        <div class="form">
+            <form id="expForm">
+                <div class="formLine left">
+                    <span for="type">Type:</span>
+                    <select id="type">
+                        <option value="chooseOne">Choose one...</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Check">Check</option>
+                        <option value="Loan">Loan</option>
+                        <option value="Bought Donuts">Bought Donuts</option>
+                    </select>
+                </div>
+                <div class="formLine right">
+                    <span for="name">Name:</span>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="formLine left">
+                    <span for="date">Date:</span>
+                    <input type="date" id="date">
+                </div>
+                <div class="formLine right">
+                    <span for="amount">Amount:</span>
+                    <input type="text" id="amount">
+                </div>
+                <button type="submit" class="buttonSave">Add a new expense</button>
+            </form>
+        </div>
+    </section>
+    <section class="content">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody id="expenseTable">
+
+            </tbody>
+        </table>
+    </section>
+    <PercentageBackground>
+    <Percentage>
+        <h2> What is <input type="number" id="percent" />% of
+            <input type="number" id="num" />?
+        </h2>
+  
+
+        <clix onclick="percentage_1()">Calculate</clix><br>
+        <input type="text" id="value1" readonly />
+    </dPercentage>
+  
+    <Percentage>
+       
+        <h2><input type="number" id="num1" />
+            is what Percent of
+            <input type="number" id="num2" />?
+        </h2>
+          
+        
+        <clix onclick="percentage_2()">Calculate</clix>
+          <br>
+          
+        <input type="text" id="value2" readonly />
+    </Percentage>
+    <imgmover><img src= "Sheild-removebg-preview.jpg" alt="Sheild"></imgmover>
+    <script src="MoneyOrganized.js"></script>
+</PercentageBackground>
+</body>
+</html>
